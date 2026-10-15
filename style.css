@@ -11,21 +11,34 @@ body {
     color: #1E1E20;
 }
 
+
 /* Lettertypen voor koppen */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
 
+
 /* Header */
 
 header {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+/* Inhoud van de header */
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #FFFFFF;
 }
+
 
 /* Logo */
 
@@ -33,6 +46,7 @@ header img {
     max-width: 150px;
     height: auto;
 }
+
 
 /* Navigatie */
 
@@ -46,27 +60,36 @@ header nav a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
-/* Homepagina - Hero */
+
+/* Navigatie hover-effect */
+
+header nav a:hover,
+header nav a:focus-visible {
+    font-weight: 700;
+    border-bottom-color: #D8BC69;
+}
+
+
+/* Gedeelde hero-instellingen */
 
 .hero {
     aspect-ratio: 1920 / 425;
 
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.25),
-            rgba(0, 0, 0, 0.25)
-        ),
-        url("images/Image-6.jpg");
-
-    background-size: 102.8% auto;
-    background-position: 22% 47.9%;
+    background-size: cover;
+    background-position: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/* Titel in de hero */
 
 .hero h1 {
     color: #FFFFFF;
@@ -77,3 +100,91 @@ header nav a {
     margin: 0;
 }
 
+
+/* Hero - Homepagina */
+
+.hero-home {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("images/Image-6.jpg");
+
+    background-size: 102.8% auto;
+    background-position: 22% 47.9%;
+}
+
+
+/* Hero - Over ons-pagina */
+
+.hero-about {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("images/Image-4.jpg");
+}
+
+
+/* Hero - Contactpagina */
+
+.hero-contact {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("images/Image-3.jpg");
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #D8BC69;
+    color: #1E1E20;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    padding: 25px max(20px, calc((100% - 1100px) / 2));
+}
+
+
+/* Copyright */
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Footernavigatie */
+
+footer nav {
+    display: flex;
+    gap: 30px;
+}
+
+footer nav a {
+    color: #1E1E20;
+    text-decoration: none;
+    font-size: 14px;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+
+/* Footernavigatie hover-effect */
+
+footer nav a:hover,
+footer nav a:focus-visible {
+    font-weight: 700;
+    border-bottom-color: #1E1E20;
+}

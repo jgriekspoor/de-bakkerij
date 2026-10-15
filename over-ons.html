@@ -1,43 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lees meer over De Bakkerij en ons team.">
     <title>Over ons | De Bakkerij</title>
-   <link rel="icon" type="image/png" href="images/logo_small_icon_only.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo_small_icon_only.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Header -->
     <header>
-        <a href="index.html">
-            <img src="images/logo_large.png" alt="Logo van De Bakkerij">
-        </a>
+        <div class="header-container">
 
-        <nav>
+            <!-- Klikbaar logo -->
+            <a href="index.html">
+                <img src="images/logo_large.png" alt="Logo van De Bakkerij">
+            </a>
+
+            <!-- Hoofdnavigatie -->
+            <nav aria-label="Hoofdnavigatie">
+                <a href="index.html">Home</a>
+                <a href="over-ons.html" aria-current="page">Over ons</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Hoofdinhoud -->
+    <main>
+        <div class="hero hero-about">
+            <h1>Over ons</h1>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 De Bakkerij</p>
+
+        <nav aria-label="Footernavigatie">
             <a href="index.html">Home</a>
             <a href="over-ons.html">Over ons</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </header>
-
-    <main>
-        <h1>Over ons</h1>
-    </main>
-
-    <footer>
-            <p>&copy; 2026 De Bakkerij</p>
-
-    <nav aria-label="Footernavigatie">
-        <a href="index.html">Home</a>
-        <a href="over-ons.html">Over ons</a>
-        <a href="contact.html">Contact</a>
-    </nav>
     </footer>
 
 </body>
+
 </html>
