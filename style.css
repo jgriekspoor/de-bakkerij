@@ -289,4 +289,131 @@ footer nav a:focus-visible {
 }
 
 
+/* Over ons-pagina - Inhoud */
 
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 20px 160px;
+}
+
+
+/* Over ons-pagina - Introductie */
+
+.about-intro {
+    margin-bottom: 25px;
+}
+
+.about-intro h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.about-intro p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Over ons-pagina - Brede afbeelding */
+
+.about-image {
+    width: 94%;
+    margin: 0 auto 65px;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Over ons-pagina - Vervolgtekst */
+
+.about-description p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.about-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Over ons-pagina - Teamleden */
+
+.about-team {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    justify-content: center;
+    gap: 120px;
+
+    margin: 75px 20px 0;
+}
+
+
+/* Teamkaart */
+
+.team-card {
+    border: 4px solid #D8BC69;
+    padding: 18px 18px 40px;
+}
+
+
+/* Foto teamlid */
+
+.team-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Naam teamlid */
+
+.team-card h3 {
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 20px 0 3px;
+}
+
+
+/* Functietitel */
+
+.team-role {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+
+/* Socialmedia-iconen */
+
+.team-socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-bottom: 15px;
+    color: #BF9D39;
+    font-size: 24px;
+}
+
+/* Omlijnde uitstraling voor de iconen */
+
+.team-socials .fa-square-facebook,
+.team-socials .fa-twitter {
+    -webkit-text-stroke: 1px #BF9D39;
+    color: transparent;
+}
