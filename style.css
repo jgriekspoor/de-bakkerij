@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
 
+h3 {
+    font-size: 24px;
+    line-height: 1.1;
+}
+
 
 /* Header */
 
@@ -60,9 +65,12 @@ header nav a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 700;
 
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
+
+    transition: border-bottom-color 0.3s ease;
 }
 
 
@@ -70,7 +78,6 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus-visible {
-    font-weight: 700;
     border-bottom-color: #D8BC69;
 }
 
@@ -175,9 +182,12 @@ footer nav a {
     color: #1E1E20;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 400;
 
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
+
+    transition: border-bottom-color 0.4s ease;
 }
 
 
@@ -188,3 +198,95 @@ footer nav a:focus-visible {
     font-weight: 700;
     border-bottom-color: #1E1E20;
 }
+
+
+/* Homepagina - Inhoud */
+
+.home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+/* Homepagina - Secties */
+
+.home-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+/* Afbeelding homepagina */
+
+.home-image {
+    flex: 2;
+    min-width: 0;
+}
+
+.home-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+
+/* Tekst homepagina */
+
+.home-text {
+    flex: 3.8;
+    min-width: 0;
+}
+
+.home-text h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+.home-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+
+/* Goudkleurige knop */
+
+.button {
+    display: inline-block;
+    background-color: #D8BC69;
+    color: #1E1E20;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    padding: 7px 18px;
+    border-radius: 3px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+    transition: background-color 0.4s ease;
+}
+
+
+/* Goudkleurige knop hover-effect */
+
+.button:hover,
+.button:focus-visible {
+    background-color: #BF9D39;
+    color: #1E1E20;
+    font-weight: 700;
+}
+
+
+
