@@ -41,12 +41,81 @@
         </div>
     </header>
 
-    <!-- Hoofdinhoud -->
-    <main>
-        <div class="hero hero-contact">
-            <h1>Contact</h1>
+
+<!-- Hoofdinhoud -->
+<main>
+
+    <!-- Hero -->
+    <div class="hero hero-contact">
+        <h1>Contact</h1>
+    </div>
+
+    <!-- Contactpagina - Inhoud -->
+    <div class="contact-content">
+
+        <!-- Linkerkolom: Contactgegevens -->
+        <div class="contact-information">
+
+            <h2>Hier kunt u ons vinden!</h2>
+
+            <h3>Adres</h3>
+            <p>
+                Hollandsch Diep 61c<br>
+                2904 EP, Capelle aan den IJssel
+            </p>
+
+            <h3>Telefoonnummer</h3>
+            <p>
+                <a href="tel:+31612345678">+31 612345678</a>
+            </p>
+
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:Info@bakkerij.nl">Info@bakkerij.nl</a>
+            </p>
+
+            <h3>Openingstijden</h3>
+
+<div class="opening-hours">
+    <div><span>Maandag</span><span>Gesloten</span></div>
+    <div><span>Dinsdag</span><span>8:00 - 17:00</span></div>
+    <div><span>Woensdag</span><span>8:00 - 17:00</span></div>
+    <div><span>Donderdag</span><span>8:00 - 17:00</span></div>
+    <div><span>Vrijdag</span><span>8:00 - 20:00</span></div>
+    <div><span>Zaterdag</span><span>8:00 - 17:00</span></div>
+    <div><span>Zondag</span><span>Gesloten</span></div>
+</div>
+
         </div>
-    </main>
+
+        <!-- Rechterkolom: Contactformulier -->
+        <div class="contact-form-container">
+
+            <form action="#" method="post">
+
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email adres</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefoonnummer</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="button">
+                    Verzenden
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
 
     <!-- Footer -->
     <footer>
