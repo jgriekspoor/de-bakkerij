@@ -1,0 +1,79 @@
+
+/* Algemene instellingen */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E20;
+}
+
+/* Lettertypen voor koppen */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+}
+
+/* Logo */
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigatie */
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #1E1E20;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Homepagina - Hero */
+
+.hero {
+    aspect-ratio: 1920 / 425;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("images/Image-6.jpg");
+
+    background-size: 102.8% auto;
+    background-position: 22% 47.9%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 400;
+    margin: 0;
+}
+
