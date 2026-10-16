@@ -31,17 +31,39 @@
                 <img src="images/logo_large.png" alt="Logo van De Bakkerij">
             </a>
 
-            <!-- Hoofdnavigatie -->
+            <!-- Hoofdnavigatie desktop -->
             <nav aria-label="Hoofdnavigatie">
                 <a href="index.html" aria-current="page">Home</a>
                 <a href="over-ons.html">Over ons</a>
                 <a href="contact.html">Contact</a>
             </nav>
 
+            <!-- Mobiele navigatie -->
+            <details class="mobile-menu">
+
+                <!-- Hamburgerknop -->
+                <summary class="menu-toggle"
+                         aria-label="Navigatiemenu openen of sluiten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </summary>
+
+                <!-- Mobiele menulinks -->
+                <nav class="mobile-navigation"
+                     aria-label="Mobiele navigatie">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="over-ons.html">Over ons</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+            </details>
+
         </div>
     </header>
 
     <!-- Hoofdinhoud -->
+
     <main>
 
         <!-- Hero homepagina -->
@@ -131,7 +153,7 @@
 
                 </div>
 
-                <!-- Afbeelding rechts -->
+                <!-- Afbeelding Contact-sectie -->
                 <div class="home-image">
                     <img src="images/Image-2.jpg"
                          alt="Deeg en bakbenodigdheden op een werktafel">

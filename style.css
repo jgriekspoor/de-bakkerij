@@ -498,7 +498,7 @@ footer nav a:focus-visible {
 
 .opening-hours {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 /* Iedere dag en tijd naast elkaar */
@@ -629,3 +629,316 @@ footer nav a:focus-visible {
 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* Mobiele navigatie - standaard verborgen */
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* Mobiele weergave */
+
+@media (max-width: 900px) {
+
+    /* Header */
+
+    .header-container {
+        padding: 15px 20px;
+    }
+
+
+    /* Desktopnavigatie verbergen */
+
+    .header-container > nav {
+        display: none;
+    }
+
+
+    /* Mobiele navigatie tonen */
+
+    .mobile-menu {
+        display: block;
+    }
+
+
+    /* Hamburgerknop */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+        width: 48px;
+        height: 44px;
+        padding: 10px;
+
+        cursor: pointer;
+        list-style: none;
+    }
+
+
+    /* Standaard pijltje verbergen */
+
+    .menu-toggle::-webkit-details-marker {
+        display: none;
+    }
+
+
+    /* Hamburgerstreepjes */
+
+    .menu-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+
+        background-color: #1E1E20;
+        border-radius: 2px;
+
+        transition: transform 0.3s ease,
+                    opacity 0.3s ease;
+    }
+
+
+    /* Goudkleurig schermvullend menu */
+
+    .mobile-navigation {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+
+        background-color: #D8BC69;
+    }
+
+
+    /* Mobiele navigatie verbergen wanneer menu gesloten is */
+
+    .mobile-menu:not([open]) .mobile-navigation {
+        display: none;
+    }
+
+
+    /* Hamburgerknop boven geopend menu */
+
+    .mobile-menu[open] .menu-toggle {
+        position: fixed;
+        top: 24px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+
+    /* Hamburger veranderen in kruis */
+
+    .mobile-menu[open] .menu-toggle span:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .mobile-menu[open] .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu[open] .menu-toggle span:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Navigatielinks */
+
+    .mobile-navigation a {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+
+        color: #1E1E20;
+        text-decoration: none;
+
+        border-bottom: 2px solid transparent;
+    }
+
+
+    /* Hover-effect navigatielinks */
+
+    .mobile-navigation a:hover,
+    .mobile-navigation a:focus-visible {
+        border-bottom-color: #1E1E20;
+    }
+
+
+    /* Homepagina - Mobiele hero */
+
+    .hero {
+        aspect-ratio: auto;
+        min-height: 250px;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        line-height: 1.05;
+        text-align: center;
+    }
+
+    .hero-home {
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* Homepagina - Mobiele inhoud */
+
+    .home-content {
+        padding: 50px 20px 70px;
+        gap: 70px;
+    }
+
+    /* Secties onder elkaar plaatsen */
+
+    .home-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Tweede home-sectie: afbeelding boven tekst op mobiel */
+
+    .home-section:nth-child(2) .home-image {
+        order: -1;
+    }
+
+    /* Afbeeldingen volledige breedte */
+
+    .home-image {
+        width: 100%;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+    /* Tekst volledige breedte */
+
+    .home-text {
+        width: 100%;
+    }
+
+
+    /* Over ons-pagina - Mobiele inhoud */
+
+    .about-content {
+        padding: 50px 20px 80px;
+    }
+
+
+    /* Introductie */
+
+    .about-intro {
+        margin-bottom: 30px;
+    }
+
+
+    /* Brede afbeelding aanpassen voor mobiel */
+
+    .about-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about-image img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+
+    /* Teamkaarten onder elkaar plaatsen */
+
+    .about-team {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+        margin: 50px 0 0;
+    }
+
+
+    /* Teamkaart */
+
+    .team-card {
+        width: 100%;
+    }
+
+    
+    /* Contactpagina - Mobiele inhoud */
+
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 20px 50px;
+    }
+
+    .contact-information h2 {
+        margin-bottom: 28px;
+    }
+
+    .contact-information h3 {
+        margin: 0 0 10px;
+    }
+
+    .contact-information p {
+        margin: 0 0 32px;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        width: 100%;
+    }
+
+    .contact-form-container textarea {
+        margin-bottom: 18px;
+    }
+
+
+}
+
+
+/* Kleinere desktops en tablets */
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+    /* Homepagina */
+
+    .home-content {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        gap: 60px;
+    }
+
+    .home-section {
+        align-items: center;
+    }
+
+    /* Contactpagina */
+
+    .contact-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+

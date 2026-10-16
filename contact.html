@@ -31,94 +31,124 @@
                 <img src="images/logo_large.png" alt="Logo van De Bakkerij">
             </a>
 
-            <!-- Hoofdnavigatie -->
+            <!-- Hoofdnavigatie desktop -->
             <nav aria-label="Hoofdnavigatie">
                 <a href="index.html">Home</a>
                 <a href="over-ons.html">Over ons</a>
                 <a href="contact.html" aria-current="page">Contact</a>
             </nav>
 
+            <!-- Mobiele navigatie -->
+            <details class="mobile-menu">
+
+                <!-- Hamburgerknop -->
+                <summary class="menu-toggle"
+                         aria-label="Navigatiemenu openen of sluiten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </summary>
+
+                <!-- Mobiele menulinks -->
+                <nav class="mobile-navigation"
+                     aria-label="Mobiele navigatie">
+                    <a href="index.html">Home</a>
+                    <a href="over-ons.html">Over ons</a>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </nav>
+
+            </details>
+
         </div>
     </header>
 
+    <!-- Hoofdinhoud -->
+    <main>
 
-<!-- Hoofdinhoud -->
-<main>
+        <!-- Hero contactpagina -->
+        <div class="hero hero-contact">
+            <h1>Contact</h1>
+        </div>
 
-    <!-- Hero -->
-    <div class="hero hero-contact">
-        <h1>Contact</h1>
-    </div>
+        <!-- Inhoud contactpagina -->
+        <div class="contact-content">
 
-    <!-- Contactpagina - Inhoud -->
-    <div class="contact-content">
+            <!-- Contactgegevens -->
+            <div class="contact-information">
 
-        <!-- Linkerkolom: Contactgegevens -->
-        <div class="contact-information">
+                <h2>Hier kunt u ons vinden!</h2>
 
-            <h2>Hier kunt u ons vinden!</h2>
+                <!-- Adres -->
+                <h3>Adres</h3>
+                <p>
+                    Hollandsch Diep 61c<br>
+                    2904 EP, Capelle aan den IJssel
+                </p>
 
-            <h3>Adres</h3>
-            <p>
-                Hollandsch Diep 61c<br>
-                2904 EP, Capelle aan den IJssel
-            </p>
+                <!-- Telefoonnummer -->
+                <h3>Telefoonnummer</h3>
+                <p>
+                    <a href="tel:+31612345678">+31 612345678</a>
+                </p>
 
-            <h3>Telefoonnummer</h3>
-            <p>
-                <a href="tel:+31612345678">+31 612345678</a>
-            </p>
+                <!-- E-mailadres -->
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:Info@bakkerij.nl">Info@bakkerij.nl</a>
+                </p>
 
-            <h3>Email</h3>
-            <p>
-                <a href="mailto:Info@bakkerij.nl">Info@bakkerij.nl</a>
-            </p>
+                <!-- Openingstijden -->
+                <h3>Openingstijden</h3>
 
-            <h3>Openingstijden</h3>
+                <div class="opening-hours">
+                    <div><span>Maandag</span><span>Gesloten</span></div>
+                    <div><span>Dinsdag</span><span>8:00 - 17:00</span></div>
+                    <div><span>Woensdag</span><span>8:00 - 17:00</span></div>
+                    <div><span>Donderdag</span><span>8:00 - 17:00</span></div>
+                    <div><span>Vrijdag</span><span>8:00 - 20:00</span></div>
+                    <div><span>Zaterdag</span><span>8:00 - 17:00</span></div>
+                    <div><span>Zondag</span><span>Gesloten</span></div>
+                </div>
 
-<div class="opening-hours">
-    <div><span>Maandag</span><span>Gesloten</span></div>
-    <div><span>Dinsdag</span><span>8:00 - 17:00</span></div>
-    <div><span>Woensdag</span><span>8:00 - 17:00</span></div>
-    <div><span>Donderdag</span><span>8:00 - 17:00</span></div>
-    <div><span>Vrijdag</span><span>8:00 - 20:00</span></div>
-    <div><span>Zaterdag</span><span>8:00 - 17:00</span></div>
-    <div><span>Zondag</span><span>Gesloten</span></div>
-</div>
+            </div>
+
+            <!-- Contactformulier -->
+            <div class="contact-form-container">
+
+                <form action="#" method="post">
+
+                    <!-- Naam -->
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <!-- E-mailadres -->
+                    <label for="email">Email adres</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Telefoonnummer -->
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <!-- Bericht -->
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <!-- Verzendknop -->
+                    <button type="submit" class="button">
+                        Verzenden
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
 
-        <!-- Rechterkolom: Contactformulier -->
-        <div class="contact-form-container">
-
-            <form action="#" method="post">
-
-                <label for="name">Naam</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email adres</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Telefoonnummer</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="message">Bericht</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <button type="submit" class="button">
-                    Verzenden
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</main>
+    </main>
 
     <!-- Footer -->
     <footer>
+
         <p>&copy; 2026 De Bakkerij</p>
 
         <nav aria-label="Footernavigatie">
@@ -126,6 +156,7 @@
             <a href="over-ons.html">Over ons</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </footer>
 
 </body>
